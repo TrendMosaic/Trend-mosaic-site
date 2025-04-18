@@ -4,11 +4,161 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Trend Mosaic Media</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        /* Reset styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Body styling */
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #121212; /* Black background */
+            color: #f4f4f4; /* Light text color */
+            line-height: 1.6;
+            padding: 20px;
+        }
+
+        /* Header Styling */
+        header {
+            background-color: #000;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: white;
+            padding: 20px;
+        }
+
+        header h1 {
+            font-size: 4rem;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+        }
+
+        /* Button styling */
+        .cta-btn {
+            background-color: #ff6f61;
+            color: white;
+            padding: 12px 20px;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: bold;
+        }
+
+        .cta-btn:hover {
+            background-color: #ff5733;
+        }
+
+        /* Section Titles Styling */
+        h2 {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            color: #ff6f61;
+        }
+
+        /* About, Services, and Contact Sections */
+        .about-us, .services, .contact {
+            background-color: #1e1e1e;
+            padding: 40px 20px;
+            margin: 30px 0;
+            border-radius: 8px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+        }
+
+        /* Founders Section */
+        .founders {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            padding: 40px 0;
+        }
+
+        .founder {
+            text-align: center;
+        }
+
+        .founder img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            border: 3px solid #ff6f61;
+            margin-bottom: 15px;
+        }
+
+        .founder h3 {
+            color: #f4f4f4;
+            margin-bottom: 5px;
+        }
+
+        .founder p {
+            color: #aaa;
+        }
+
+        /* Contact Form Styling */
+        .contact form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            max-width: 400px;
+            margin: 0 auto;
+        }
+
+        .contact input,
+        .contact textarea {
+            padding: 12px;
+            background-color: #333;
+            border: 1px solid #444;
+            border-radius: 6px;
+            color: white;
+        }
+
+        .contact button {
+            background-color: #ff6f61;
+            color: white;
+            padding: 12px;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+
+        .contact button:hover {
+            background-color: #ff5733;
+        }
+
+        /* Footer Styling */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #222;
+            color: white;
+        }
+
+        footer .socials a {
+            color: #ff6f61;
+            margin: 0 10px;
+            text-decoration: none;
+        }
+
+        footer .socials a:hover {
+            color: #ff5733;
+        }
+    </style>
 </head>
 <body>
 
+    <!-- Header Section -->
     <header>
         <div>
             <h1>Trend Mosaic Media</h1>
@@ -17,50 +167,58 @@
         </div>
     </header>
 
+    <!-- About Us Section -->
     <section id="about" class="about-us">
         <h2>About Us</h2>
         <p>Hey! We’re just two young guys from Kashmir trying to figure out how to make a difference. We don’t even know if it’s fair to call ourselves entrepreneurs yet—but we’re trying. TMM (Trend Mosaic Media) is our dream project, a digital platform and marketplace agency built to tackle youth unemployment in Kashmir and across India.</p>
         <p>We connect talented people—writers, developers, designers—with businesses around the world. Our platform doesn’t just focus on individuals, we enable group-based project collaboration, which helps youth work as a team based on skill profiles.</p>
     </section>
 
+    <!-- Our Mission Section -->
     <section class="services">
         <h2>Our Mission</h2>
         <p>We aim to bridge the gap between local talent and global opportunities.</p>
-        <div class="service">Group-Based Project Matching</div>
-        <div class="service">Verified Skill-Based Youth Teams</div>
-        <div class="service">Empowering Kashmiri & Indian Youth (18–30)</div>
+        <ul>
+            <li>Group-Based Project Matching</li>
+            <li>Verified Skill-Based Youth Teams</li>
+            <li>Empowering Kashmiri & Indian Youth (18–30)</li>
+        </ul>
     </section>
 
+    <!-- Founders Section -->
     <section class="founders">
         <div class="founder">
-            <!--img src="uzaid.jpg" alt="Uzaid"-->
+            <!--img src="uzaid.jpg" alt="Uzaid Rayees Bhat"-->
             <h3>Uzaid Rayees Bhat</h3>
             <p>Founder & Head of Tech + Marketing</p>
         </div>
         <div class="founder">
-            <!--img src="arslan.jpg" alt="Arsalan"-->
+            <!--img src="arslan.jpg" alt="Arsalan Naqshbandi"-->
             <h3>Arsalan Naqshbandi</h3>
             <p>Co-Founder & Head of Strategy + Business</p>
         </div>
     </section>
 
+    <!-- Contact Section -->
     <section class="contact">
         <h2>Contact Us</h2>
-        <form>
-            <input type="text" placeholder="Your Name">
-            <input type="email" placeholder="Your Email">
-            <textarea rows="4" placeholder="Your Message"></textarea>
-            <button type="submit">Send</button>
+        <form action="#">
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
         </form>
     </section>
 
+    <!-- Footer Section -->
     <footer>
-        <p>© 2025 Trend Mosaic Media</p>
+        <p>Follow Us</p>
         <div class="socials">
+            <a href="#">Facebook</a>
             <a href="#">Instagram</a>
             <a href="#">LinkedIn</a>
-            <a href="#">Twitter</a>
         </div>
+        <p>&copy; 2025 Trend Mosaic Media. All rights reserved.</p>
     </footer>
 
 </body>
