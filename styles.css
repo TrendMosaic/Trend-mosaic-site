@@ -54,11 +54,12 @@ h2 {
 }
 
 .founder img {
-    width: 120px;  /* Adjusted image size */
-    height: 120px; /* Adjusted to keep it square */
+    width: 70px;
+    height: 70px;
     border-radius: 50%;
     object-fit: cover;
-    margin: 10px;  /* Spacing around the image */
+    margin: 10px auto;
+    display: block;
 }
 
 .service {
