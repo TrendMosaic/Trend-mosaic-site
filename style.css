@@ -147,3 +147,20 @@ footer .socials a {
 footer .socials a:hover {
   color: #ff5733;
 }
+
+/* Services List Styling */
+.services-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 columns on desktop */
+  gap: 30px;
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+/* Media Query for Mobile */
+@media (max-width: 768px) {
+  .services-list {
+    grid-template-columns: 1fr; /* 1 column on mobile */
+  }
+}
