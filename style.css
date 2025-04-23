@@ -207,7 +207,7 @@ footer .socials a:hover {
   position: sticky;
   top: 0;
   z-index: 1000;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.5);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
 }
 
 .nav-container {
@@ -242,3 +242,53 @@ footer .socials a:hover {
   color: #ff6f61;
 }
 
+/* Mobile View - Navigation Adjustment */
+@media (max-width: 768px) {
+  .nav-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav-links {
+    display: none;
+    width: 100%;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 15px;
+    text-align: left;
+  }
+
+  .nav-links a {
+    padding: 10px;
+    width: 100%;
+    display: block;
+    text-align: center;
+  }
+
+  /* Mobile Menu Toggle */
+  .nav-toggle {
+    display: block;
+    background-color: #ff6f61;
+    padding: 10px;
+    cursor: pointer;
+    text-align: center;
+    width: 35px;
+    height: 35px;
+    color: #fff;
+    border-radius: 5px;
+  }
+
+  /* Hide the nav-toggle checkbox input */
+  .nav-toggle-checkbox {
+    display: none;
+  }
+
+  /* Show the navigation links when the checkbox is checked */
+  .nav-toggle-checkbox:checked + .nav-container .nav-links {
+    display: flex;
+  }
+}
+
+.nav-toggle-checkbox:checked + .nav-container .nav-toggle:before {
+  content: '×'; /* Change the hamburger icon to a close icon when clicked */
+}
