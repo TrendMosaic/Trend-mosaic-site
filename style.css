@@ -268,3 +268,16 @@ footer .socials a:hover {
     border-top: 1px solid #444;
   }
 }
+.demo-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 30px;
+}
+
+.demo-buttons .cta-btn {
+  flex: 1 1 200px; /* responsive width */
+  text-align: center;
+}
+
