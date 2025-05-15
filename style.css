@@ -82,8 +82,9 @@ h2 {
 }
 
 .demo-buttons .cta-btn {
-  flex: 1 1 250px;
-  max-width: 300px;
+  flex: none;
+  width: auto;
+  max-width: none;
   text-align: center;
 }
 
@@ -291,7 +292,7 @@ footer .socials a:hover {
   }
 
   .demo-buttons .cta-btn {
-    width: 100%;
-    max-width: 90%;
+    width: auto;
+    padding: 12px 20px;
   }
 }
