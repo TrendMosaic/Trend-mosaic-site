@@ -16,7 +16,7 @@
       line-height: 1.6;
     }
     header {
-      background: url('https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=1350&q=80') no-repeat center center/cover;
+      background: url('https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=1500&q=80') no-repeat center center/cover;
       height: 90vh;
       display: flex;
       flex-direction: column;
@@ -52,6 +52,15 @@
     .btn:hover {
       background-color: #ff5733;
     }
+    .section-title {
+      text-align: center;
+      font-size: 2.5rem;
+      margin-bottom: 30px;
+      color: #ff6f61;
+    }
+    .about-text, .gallery, .contact-info {
+      text-align: center;
+    }
     .menu {
       display: flex;
       flex-wrap: wrap;
@@ -66,6 +75,13 @@
       box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
       text-align: center;
     }
+    .menu-item img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 8px;
+      margin-bottom: 10px;
+    }
     .menu-item h3 {
       margin-bottom: 10px;
       color: #ff6f61;
@@ -75,6 +91,9 @@
       text-align: center;
       padding: 30px;
       color: #ccc;
+    }
+    a.email-link {
+      color: #ff6f61;
     }
   </style>
 </head>
@@ -86,31 +105,59 @@
   </header>
 
   <section id="about">
-    <h2 style="text-align: center; color: #ff6f61;">About Us</h2>
-    <p style="margin-top: 20px; text-align: center;">Located in the heart of Kashmir, Café Aroma brings you freshly brewed coffee, warm pastries, and cozy vibes — all designed to make your day special.</p>
+    <h2 class="section-title">About Us</h2>
+    <p class="about-text">Located in the heart of Kashmir, Café Aroma brings you freshly brewed coffee, warm pastries, and cozy vibes — all designed to make your day special. We’re all about community, culture, and that perfect cup of comfort.</p>
   </section>
 
   <section id="menu">
-    <h2 style="text-align: center; color: #ff6f61;">Our Popular Picks</h2>
+    <h2 class="section-title">Our Popular Picks</h2>
     <div class="menu">
       <div class="menu-item">
+        <img src="https://images.unsplash.com/photo-1541167760496-1628856ab772?auto=format&fit=crop&w=800&q=80" alt="Cappuccino">
         <h3>Cappuccino</h3>
-        <p>Rich espresso topped with steamed milk and foam.</p>
+        <p>Rich espresso topped with steamed milk and foam. Perfectly balanced.</p>
       </div>
       <div class="menu-item">
+        <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=800&q=80" alt="Muffin">
         <h3>Chocolate Muffin</h3>
-        <p>Soft, warm, and filled with gooey chocolate chunks.</p>
+        <p>Soft, warm, and filled with gooey chocolate chunks. A bestseller.</p>
       </div>
       <div class="menu-item">
+        <img src="https://images.unsplash.com/photo-1550418290-a8d86ad674d4?auto=format&fit=crop&w=800&q=80" alt="Kahwa">
         <h3>Kashmiri Kahwa</h3>
-        <p>Traditional green tea infused with saffron and almonds.</p>
+        <p>Traditional green tea infused with saffron, almonds, and local spices.</p>
+      </div>
+      <div class="menu-item">
+        <img src="https://images.unsplash.com/photo-1598514982580-36d6ebaf8f34?auto=format&fit=crop&w=800&q=80" alt="Croissant">
+        <h3>Butter Croissant</h3>
+        <p>Flaky, golden perfection. Freshly baked every morning.</p>
+      </div>
+      <div class="menu-item">
+        <img src="https://images.unsplash.com/photo-1566843971420-cd7e7e7b4c9b?auto=format&fit=crop&w=800&q=80" alt="Iced Coffee">
+        <h3>Iced Coffee</h3>
+        <p>Chilled and smooth with a hint of vanilla — a summer favorite.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="gallery">
+    <h2 class="section-title">Inside the Café</h2>
+    <p class="gallery">Take a peek at the ambience that keeps our customers coming back for more.</p>
+    <div class="menu">
+      <div class="menu-item">
+        <img src="https://images.unsplash.com/photo-1500048993953-d23a436266cf?auto=format&fit=crop&w=800&q=80" alt="Interior 1">
+        <p>Warm wooden décor, rustic charm.</p>
+      </div>
+      <div class="menu-item">
+        <img src="https://images.unsplash.com/photo-1542909168-82c3e7fdca5c?auto=format&fit=crop&w=800&q=80" alt="Interior 2">
+        <p>Quiet corners for remote work and reading.</p>
       </div>
     </div>
   </section>
 
   <section id="contact">
-    <h2 style="text-align: center; color: #ff6f61;">Get In Touch</h2>
-    <p style="text-align: center;">Interested in building a site like this for your café or business? Contact <strong>Trend Mosaic Media</strong> at <a href="mailto:trendmosaicmedia@gmail.com" style="color: #ff6f61;">trendmosaicmedia@gmail.com</a></p>
+    <h2 class="section-title">Get In Touch</h2>
+    <p class="contact-info">Interested in building a site like this for your café or business? Contact <strong>Trend Mosaic Media</strong> at <a href="mailto:trendmosaicmedia@gmail.com" class="email-link">trendmosaicmedia@gmail.com</a></p>
   </section>
 
   <footer>
@@ -118,4 +165,3 @@
   </footer>
 </body>
 </html>
-
